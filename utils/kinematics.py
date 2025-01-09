@@ -308,6 +308,7 @@ def fk_open_chain(home_config, screw_axes_list, theta_list) -> np.ndarray:
 def main():
     quat = [0.7071, 0.7071, 0, 0]
     matrix = quat2matrix(quat)
+    print(matrix)
     quat2 = matrix2quat(matrix)
     print(quat2)
 
